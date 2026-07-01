@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Premium Colors -->
+    <color name="premium_dark">#121212</color>
+    <color name="premium_card_bg">#1E1E1E</color>
+    <color name="premium_accent">#00E5FF</color>
+    <color name="premium_accent_dark">#00B8D4</color>
+    <color name="premium_text_primary">#FFFFFF</color>
+    <color name="premium_text_secondary">#B3B3B3</color>
+    <color name="premium_gradient_start">#2b2b2b</color>
+    <color name="premium_gradient_end">#121212</color>
 </resources>
