@@ -1,17 +1,25 @@
 package com.example.myapplication
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
-/**
- * Example local unit test, which will execute on the development machine (host).
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun dataStore_items_are_populated() {
+        assertTrue(DataStore.items.isNotEmpty())
+    }
+
+    @Test
+    fun dataStore_getItem_returns_correct_item() {
+        val firstItem = DataStore.items.first()
+        val retrievedItem = DataStore.getItem(firstItem.id)
+        assertNotNull(retrievedItem)
+        assertEquals(firstItem, retrievedItem)
+    }
+
+    @Test
+    fun dataStore_getItem_returns_null_for_invalid_id() {
+        val retrievedItem = DataStore.getItem(-1)
+        assertNull(retrievedItem)
     }
 }
